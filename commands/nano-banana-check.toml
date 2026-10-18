@@ -1,0 +1,4 @@
+description = "Check Nano Banana setup without creating media"
+prompt = """
+Activate the nano-banana-image skill. Inspect the names and schemas already loaded from nano-banana-by-ace-data-cloud. List generation, edit and task-query names, explaining the first setup check makes no tool call. Do not call any tool except activate_skill, do not create images, and do not fabricate or query a task ID.
+"""
