@@ -1,0 +1,28 @@
+{
+  "name": "nano-banana-by-ace-data-cloud",
+  "version": "0.1.0",
+  "description": "Nano Banana image generation and editing via Ace Data Cloud, with native Token setup and same-task results. Independent integration, not an official service product.",
+  "contextFileName": "GEMINI.md",
+  "mcpServers": {
+    "nano-banana-by-ace-data-cloud": {
+      "httpUrl": "https://nanobanana.mcp.acedata.cloud/mcp",
+      "headers": {
+        "Authorization": "Bearer ${ACEDATACLOUD_NANO_BANANA_TOKEN}"
+      },
+      "includeTools": [
+        "nanobanana_generate_image",
+        "nanobanana_edit_image",
+        "nanobanana_get_task",
+        "nanobanana_get_tasks_batch"
+      ]
+    }
+  },
+  "settings": [
+    {
+      "name": "Ace Data Cloud Nano Banana API Token",
+      "description": "Sign in or register at https://platform.acedata.cloud/console/applications?utm_source=gemini-cli&utm_medium=referral&utm_campaign=evergreen&utm_content=nanobananagemini_install_token . Open General application, copy or create a service Key with Nano Banana access. Paste the raw token without Bearer. Check permissions, balance and price before generation.",
+      "envVar": "ACEDATACLOUD_NANO_BANANA_TOKEN",
+      "sensitive": true
+    }
+  ]
+}
